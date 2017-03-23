@@ -11,7 +11,7 @@ B = 1/sqrt(2)
 T = 1/4;
 P = 1;
 
-for x in range(0, interactions):
+for x in range(0, int(interactions)):
 
 	An = (A+B)/2
 	Bn = sqrt(A*B)
@@ -27,5 +27,5 @@ for x in range(0, interactions):
 pi = power(A+B,2)/(4*T)
 
 f = open( 'pi.txt', 'w' )
-f.write( pi )
+f.write( nstr(pi,int(precision)) )
 f.close()

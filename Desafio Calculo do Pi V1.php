@@ -4,15 +4,13 @@
 
 	function CalcParcela($val) {
 
-		$v1 = "{$val}";
-		$val++;
-		$v2 = "{$val}";
-		$val++;
-		$v3 = "{$val}";
+		$v1 = $val++;
+		$v2 = $val++;
+		$v3 = $val;
 
 		$f1 = bcmul($v1,bcmul($v2,$v3));
 
-		$ret = bcdiv("4.0",$f1);
+		$ret = bcdiv(4,$f1);
 
 		return $ret;
 	}

@@ -1,4 +1,3 @@
-import sys
 from mpmath import *
 
 mp.dps = 100000; mp.pretty = True

@@ -12,7 +12,6 @@ T = 1/4;
 P = 1;
 
 for x in range(0, int(interactions)):
-
 	An = (A+B)/2
 	Bn = sqrt(A*B)
 	Tn = T-P*power(A-An,2)
@@ -22,7 +21,6 @@ for x in range(0, int(interactions)):
 	B = Bn;
 	T = Tn;
 	P = Pn;
-
 
 pi = power(A+B,2)/(4*T)
 

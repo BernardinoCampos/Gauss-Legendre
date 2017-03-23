@@ -1,13 +1,17 @@
 from mpmath import *
 
-mp.dps = 100000; mp.pretty = True
+precision = 1000000
+
+interactions = ceil(log(precision)/log(2))+1
+
+mp.dps = precision; mp.pretty = True
 
 A = 1;
 B = 1/sqrt(2)
 T = 1/4;
 P = 1;
 
-for x in range(0, 32):
+for x in range(0, interactions):
 
 	An = (A+B)/2
 	Bn = sqrt(A*B)
@@ -22,4 +26,6 @@ for x in range(0, 32):
 
 pi = power(A+B,2)/(4*T)
 
-print (pi)
+f = open( 'pi.txt', 'w' )
+f.write( pi )
+f.close()

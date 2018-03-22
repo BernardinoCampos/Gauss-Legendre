@@ -1,3 +1,3 @@
-# Gauss-Legendre_PHP
+# Resolução do PI usando a série de Nilakantha
 
-Apesar do Título a versão v1 usa a série de Nilakantha
+[Nilakantha Somayaji](https://en.wikipedia.org/wiki/Nilakantha_Somayaji)
